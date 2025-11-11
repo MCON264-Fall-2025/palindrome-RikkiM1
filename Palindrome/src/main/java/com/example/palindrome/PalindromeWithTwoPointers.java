@@ -1,6 +1,7 @@
 package com.example.palindrome;
 
-public class PalindromeWithTwoPointers {
+public final class PalindromeWithTwoPointers {
+    private PalindromeWithTwoPointers() { /* utility */ }
 
     public static boolean isPalindrome(String s) {
         if (s == null) throw new IllegalArgumentException("Input cannot be null");
