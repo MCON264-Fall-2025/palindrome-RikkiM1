@@ -20,7 +20,6 @@ public final class PalindromeWithTwoPointers {
         return true;
     }
 
-    // ✅ Add this method
     public static String normalize(String s) {
         if (s == null) throw new IllegalArgumentException("Input cannot be null");
         return s.replaceAll("[^A-Za-z0-9]", "").toLowerCase();
