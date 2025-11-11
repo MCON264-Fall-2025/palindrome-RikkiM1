@@ -27,8 +27,7 @@ public class PalindromeWithStackQueue {
         Queue<Character> queue = new LinkedList<>();
 
         // Push and enqueue all characters
-        for (int i = 0; i < candidate.length(); i++) {
-            char ch = candidate.charAt(i);
+        for (char ch : candidate.toString().toCharArray()) {
             stack.push(ch);
             queue.add(ch);
         }
