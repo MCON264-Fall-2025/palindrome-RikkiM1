@@ -16,13 +16,7 @@ public class PalindromeWithStackQueue {
         }
 
         // Normalize input
-        StringBuilder candidate = new StringBuilder();
-        for (char c : s.toCharArray()) {
-            if (Character.isLetterOrDigit(c)) {
-                candidate.append(Character.toLowerCase(c));
-            }
-        }
-
+        StringBuilder candidate = new StringBuilder(normalize(s));
         Stack<Character> stack = new Stack<>();
         Queue<Character> queue = new LinkedList<>();
 
